@@ -1,3 +1,2 @@
 #!/bin/bash
-pycode $PYFILE;
-print "hello"
+./main.py
