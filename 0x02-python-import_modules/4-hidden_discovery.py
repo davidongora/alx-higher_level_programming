@@ -1,12 +1,9 @@
 #!/usr/bin/python
-import dis
+if __name__ == "__main__":
+    """Print all names defined by hidden_4 module."""
+    import hidden_4
 
-with open("hidden_4.pyc", "rb") as file:
-    code = file.read()
-
-instructions = dis.get_instructions(code)
-
-names = {instr.argval for instr in instructions if instr.opname == 'LOAD_NAME' \
-         and not instr.argval.startswith('__')}
-for name in sorted(names):
-    print(name)
+    names = dir(hidden_4)
+    for name in names:
+        if name[:2] != "__":
+            print(name)

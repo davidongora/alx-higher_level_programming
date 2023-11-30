@@ -1,3 +1,3 @@
 #!/usr/bin/bash
-import string; 
+import string
 print(string.ascii_uppercase)
