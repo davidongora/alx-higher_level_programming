@@ -10,4 +10,3 @@ else:
     print(f"{num_args} {'argument' if num_args == 1 else 'arguments'}:")
     for i, arg in enumerate(args, 1):
         print(f"{i}: {arg}")
-
