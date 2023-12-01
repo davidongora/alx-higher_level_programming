@@ -2,9 +2,9 @@
 
 if __name__ == "__main__":
     """Print all names defined by hidden_4 module."""
-    import hidden.pyc
+    import imp
 
-    names = dir(hidden_4.pyc)
-    for name in names:
-        if name[:2] != "__":
-            print(name)
+    names = 'hidden_4.pyc'
+    for i in dir(filename_pyc):
+        if i[0] != '_':
+            print("{}".format(i))
