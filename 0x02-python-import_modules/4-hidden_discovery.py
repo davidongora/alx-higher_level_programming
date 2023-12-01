@@ -5,6 +5,6 @@ if __name__ == "__main__":
     import imp
 
     names = 'hidden_4.pyc'
-    for i in dir(filename_pyc):
+    for i in dir(names):
         if i[0] != '_':
             print("{}".format(i))
