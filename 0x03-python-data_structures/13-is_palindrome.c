@@ -1,6 +1,6 @@
 /*
  * File: 13-is_palindrome.c
- * Auth: David Ongora
+ * Auth: Mbah Nkemdinma
  */
 
 #include "lists.h"
