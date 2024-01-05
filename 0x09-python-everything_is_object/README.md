@@ -12,4 +12,4 @@ How to display the variable identifier (which is the memory address in the CPyth
 What is mutable and immutable
 What are the built-in mutable types
 What are the built-in immutable types
-How does Python pass variables to functions
+<!-- How does Python pass variables to functions -->
