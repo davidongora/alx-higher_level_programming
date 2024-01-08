@@ -1,35 +1,38 @@
 #!/usr/bin/python3
-"""this is a unit test for the maxinteger function"""
+"""Unittests for max_integer([..])."""
+
 import unittest
 max_integer = __import__('6-max_integer').max_integer
 
+
 class TestMaxInteger(unittest.TestCase):
-    """unittests """
+    """Define unittests for max_integer([..])."""
+
     def test_ordered_list(self):
         """Test an ordered list of integers."""
-        ordered = [1,2,3,4]
+        ordered = [1, 2, 3, 4]
         self.assertEqual(max_integer(ordered), 4)
-        
+
     def test_unordered_list(self):
-        """test an undorded list"""
-        unordered = [3,4,2,1]
+        """Test an unordered list of integers."""
+        unordered = [1, 2, 4, 3]
         self.assertEqual(max_integer(unordered), 4)
-        
-    def test_max_at_beginning(self):
-        """list startting with max value"""
-        max_at_beginning = [4,3,2,1]
+
+    def test_max_at_begginning(self):
+        """Test a list with a beginning max value."""
+        max_at_beginning = [4, 3, 2, 1]
         self.assertEqual(max_integer(max_at_beginning), 4)
-        
+
     def test_empty_list(self):
-        """tests for empty list"""
+        """Test an empty list."""
         empty = []
         self.assertEqual(max_integer(empty), None)
-        
+
     def test_one_element_list(self):
-        """with single element"""
-        element = [1]
-        self.assertEqual(max_integer(element), 1)
-     
+        """Test a list with a single element."""
+        one_element = [7]
+        self.assertEqual(max_integer(one_element), 7)
+
     def test_floats(self):
         """Test a list of floats."""
         floats = [1.53, 6.33, -9.123, 15.2, 6.0]
@@ -52,8 +55,7 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_empty_string(self):
         """Test an empty string."""
-        self.assertEqual(max_integer(""), None)   
-        
-        
+        self.assertEqual(max_integer(""), None)
+
 if __name__ == '__main__':
     unittest.main()
